@@ -2,6 +2,8 @@
   "name": "Angular Client Base",
   "description": "A base project for angular client app",
   "dependencies": {
-    "angular": "1.4.x"
+    "angular": "1.4.x",
+    "requirejs": "~2.1.22",
+    "angular-route": "~1.4.9"
   }
 }
