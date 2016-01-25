@@ -1,10 +1,10 @@
 define(function(require) {
-    function HomeController($scope) {
+  function HomeController($scope) {
 
-    }
+  }
 
-    // define angular dependencies
-    HomeController.$inject = ["$scope"];
+  // define angular dependencies
+  HomeController.$inject = ["$scope"];
 
-    return HomeController;
+  return HomeController;
 });
