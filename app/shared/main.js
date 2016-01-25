@@ -3,12 +3,12 @@ define('shared', function(require) {
   var angular = require('angular');
 
   // define angular module
-  var name = 'shared';
+  var ngName = 'shared';
 
-  var ngModule = angular.module(name, []);
+  var ngModule = angular.module(ngName, []);
 
   return {
-      name: name,
-      ngModule: ngModule
+    ngName: ngName,
+    ngModule: ngModule
   };
 });
