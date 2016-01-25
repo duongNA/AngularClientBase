@@ -2,6 +2,6 @@
   "name": "Angular Client Base",
   "description": "A base project for angular client app",
   "dependencies": {
-    "bower": "^1.7.2"
+    "angular": "1.4.x"
   }
 }
