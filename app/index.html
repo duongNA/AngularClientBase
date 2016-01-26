@@ -12,7 +12,9 @@
 </head>
 <body>
 
-  <div ng-view></div>
+  <div id="header" ui-view="header"></div>
+  <div id="content" ui-view="content"></div>
+  <div id="footer" ui-view="footer"></div>
 
   <script src="bower_components/requirejs/require.js" data-main="bootstrap"></script>
 </body>

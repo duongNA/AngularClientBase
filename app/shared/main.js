@@ -7,6 +7,9 @@ define('shared', function(require) {
 
   var ngModule = angular.module(ngName, []);
 
+  // routes
+  ngModule.config(require('./routes'));
+
   return {
     ngName: ngName,
     ngModule: ngModule

@@ -3,7 +3,8 @@
 require.config({
   paths: {
     angular: 'bower_components/angular/angular',
-    ngRoute: 'bower_components/angular-route/angular-route'
+    ngRoute: 'bower_components/angular-route/angular-route',
+    uiRouter: 'bower_components/angular-ui-router/release/angular-ui-router'    
   },
   shim: {
     angular: {
@@ -12,6 +13,9 @@ require.config({
     ngRoute: {
       deps: ['angular']
     },
+    uiRouter: {
+      deps: ['angular']
+    }
   },
 
   packages: [
@@ -19,7 +23,12 @@ require.config({
     {
       name: 'home',
       location: './components/home'
+    },
+    {
+      name: 'shows',
+      location: './components/shows'
     }
+
   ]
 });
 

@@ -1,14 +1,15 @@
 define(function(require) {
-  function config($routeProvider) {
-    $routeProvider
-      .when('/home', {
+  function config($stateProvider, $urlRouterProvider) {
+    $stateProvider
+      .state('home', {
+        url: '/',
         templateUrl: 'components/home/views/home.html',
         controller: 'HomeController'
       });
   }
 
   // define angular dependencies
-  config.$inject = ['$routeProvider'];
+  config.$inject = ['$stateProvider', '$urlRouterProvider'];
 
   return config;
 });
