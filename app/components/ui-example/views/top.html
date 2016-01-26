@@ -1,0 +1,19 @@
+<h2>Hello from ui example top</h2>
+
+<div class="btn-group" data-toggle="buttons">
+  <label class="btn btn-primary" ng-model="bigData.breakfast" uib-btn-checkbox>
+    Breakfast
+  </label>
+
+  <label class="btn btn-primary" ng-model="bigData.lunch" uib-btn-checkbox>
+    Lunch
+  </label>
+
+  <label class="btn btn-primary" ng-model="bigData.dinner" uib-btn-checkbox>
+    Dinner
+  </label>
+</div>
+
+<div>
+bigData: {{ bigData | json }}
+</div>
