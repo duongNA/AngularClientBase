@@ -9,7 +9,7 @@ define(function(require) {
   UserService.prototype = Object.create(BaseApiService.prototype);
 
   UserService.prototype.list = function() {
-    return this.$http.get('/data/users.json');
+    return this.get('/data/users.json');
   }
 
   function serviceFactory($http) {
@@ -17,8 +17,6 @@ define(function(require) {
   }
 
   serviceFactory.$inject = ['$http'];
-
-  // 
 
   return serviceFactory;
 });
