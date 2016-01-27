@@ -5,12 +5,12 @@ define(function(require) {
     $injector.invoke(BaseController, this, { $scope: $scope });
 
     UserService.list()
-      .then(function(response) {
-        console.log('response: ' + JSON.stringify(response));
-        $scope.users = response.data;
+      .then(function(users) {
+        console.log('response: ' + JSON.stringify(users));
+        $scope.users = users;
       })
       .catch(function(response) {
-        console.log('api error reponse: ' + JSON.stringify(response));
+        console.log('error response: ' + JSON.stringify(response));
       });
   }
 

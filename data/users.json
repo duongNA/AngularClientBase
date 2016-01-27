@@ -1,10 +1,13 @@
-[
-  {
-    "name": "duong1",
-    "age": 21
-  },
-  {
-    "name": "duong2",
-    "age": 22
-  }
-]
+{
+  "status" :"success",
+  "data" : [
+    { 
+      "name": "duong1",
+      "age": 21
+    },
+    {
+      "name": "duong2",
+      "age": 22
+    }
+  ]
+}

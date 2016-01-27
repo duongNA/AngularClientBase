@@ -2,8 +2,8 @@ define(function(require) {
   var BaseApiService = require('../../../shared/services/BaseApiService');
 
   // class UserService
-  var UserService = function($http, Config) {
-    BaseApiService.call(this, $http);
+  var UserService = function($http, Config, $q) {
+    BaseApiService.call(this, $http, Config, $q);
 
     this.Config = Config;
   }
@@ -11,14 +11,14 @@ define(function(require) {
   UserService.prototype = Object.create(BaseApiService.prototype);
 
   UserService.prototype.list = function() {
-    return this.get('/data/users.json');
+    return this.get('/data/users2.json');
   }
 
-  function serviceFactory($http, Config) {
-    return new UserService($http, Config);
+  function serviceFactory($http, Config, $q) {
+    return new UserService($http, Config, $q);
   }
 
-  serviceFactory.$inject = ['$http', 'Config'];
+  serviceFactory.$inject = ['$http', 'Config', '$q'];
 
   return serviceFactory;
 });
