@@ -7,6 +7,9 @@ define('shared', function(require) {
 
   var ngModule = angular.module(ngName, []);
 
+  // service
+
+
   // routes
   ngModule.config(require('./routes'));
 

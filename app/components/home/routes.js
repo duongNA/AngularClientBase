@@ -1,10 +1,14 @@
 define(function(require) {
   function config($stateProvider, $urlRouterProvider) {
     $stateProvider
-      .state('home', {
+      .state('app.home', {
         url: '/',
-        templateUrl: 'components/home/views/home.html',
-        controller: 'HomeController'
+        views: {
+          'content@': {
+            templateUrl: 'components/home/views/home.html',
+            controller: 'home.HomeController'
+          }
+        }
       });
   }
 

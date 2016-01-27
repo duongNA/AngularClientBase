@@ -1,12 +1,21 @@
 define(function(require) {
   function config($stateProvider, $urlRouterProvider) {
     $stateProvider
-      .state('app.uiexample', {
+      .state('app.uiexample-top', {
         url: '/uiexample/top',
         views: {
           'content@': {
             templateUrl: 'components/ui-example/views/top.html',
-            controller: 'UIExampleTopController'
+            controller: 'uiexample.TopController'
+          }
+        }
+      })
+      .state('app.uiexample-users', {
+        url: '/uiexample/users',
+        views: {
+          'content@': {
+            templateUrl: 'components/ui-example/views/users.html',
+            controller: 'uiexample.UserController'
           }
         }
       });

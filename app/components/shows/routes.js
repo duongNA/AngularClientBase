@@ -6,7 +6,7 @@ define(function(require) {
         views: {
           'content@': {
             templateUrl: 'components/shows/views/shows.html',
-            controller: 'ShowsController'
+            controller: 'shows.ShowsController'
           }
         }
       })
@@ -15,7 +15,7 @@ define(function(require) {
         views: {
           'detail@app.shows': {
             templateUrl: 'components/shows/views/shows-details.html',
-            controller: 'ShowsDetailsController'
+            controller: 'shows.ShowsDetailsController'
           }
         }
       });

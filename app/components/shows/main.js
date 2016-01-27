@@ -1,4 +1,4 @@
-define('shows', function(require) {
+define(function(require) {
   // specify requirejs dependencies
   var angular = require('angular');
 
@@ -8,8 +8,8 @@ define('shows', function(require) {
   var ngModule = angular.module(ngName, ngDependencies);
 
   // controllers
-  ngModule.controller('ShowsController', require('./controllers/ShowsController'));
-  ngModule.controller('ShowsDetailsController', require('./controllers/ShowsDetailsController'));
+  ngModule.controller('shows.ShowsController', require('./controllers/ShowsController'));
+  ngModule.controller('shows.ShowsDetailsController', require('./controllers/ShowsDetailsController'));
 
   // services
   ngModule.factory('ShowsService', require('./services/ShowsService'));

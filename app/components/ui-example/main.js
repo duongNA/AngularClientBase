@@ -1,4 +1,4 @@
-define('ui-example', function(require) {
+define(function(require) {
   // specify requirejs dependencies
   var angular = require('angular');
 
@@ -8,9 +8,11 @@ define('ui-example', function(require) {
   var ngModule = angular.module(ngName, ngDependencies);
 
   // controllers
-  ngModule.controller('UIExampleTopController', require('./controllers/UIExampleTopController'));
+  ngModule.controller('uiexample.TopController', require('./controllers/TopController'));
+  ngModule.controller('uiexample.UserController', require('./controllers/UserController'));
 
   // services
+  ngModule.factory('uiexample.UserService', require('./services/UserService'));
 
   // route
   ngModule.config(require('./routes'));

@@ -1,4 +1,4 @@
-define('home', function(require) {
+define(function(require) {
   // specify requirejs dependencies
   var angular = require('angular');
   var ngRoute = require('ngRoute');
@@ -8,7 +8,7 @@ define('home', function(require) {
   var ngDependencies = ['ngRoute'];
   var ngModule = angular.module(ngName, ngDependencies);
 
-  ngModule.controller('HomeController', require('./controllers/HomeController'));
+  ngModule.controller('home.HomeController', require('./controllers/HomeController'));
 
   ngModule.config(require('./routes'));
 
