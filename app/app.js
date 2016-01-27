@@ -4,6 +4,7 @@ define('app', function(require) {
   var uiRouter = require('uiRouter');
   var uiBootstrap = require('uiBootstrap');
   var shared = require('shared');
+  var config = require('config');
   var home = require('home');
   var shows = require('shows');
   var uiExample = require('ui-example');
@@ -12,6 +13,7 @@ define('app', function(require) {
   var dependencies = [
     'ui.router',
     'ui.bootstrap',
+    config.ngName,
     shared.ngName,
     home.ngName,
     shows.ngName,

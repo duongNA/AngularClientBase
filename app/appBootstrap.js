@@ -28,6 +28,7 @@ require.config({
 
   packages: [
     'shared',
+    'config',
     {
       name: 'home',
       location: './components/home'

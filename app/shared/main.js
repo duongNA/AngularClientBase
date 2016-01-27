@@ -1,4 +1,4 @@
-define('shared', function(require) {
+define(function(require) {
   // specify requirejs dependencies
   var angular = require('angular');
 
