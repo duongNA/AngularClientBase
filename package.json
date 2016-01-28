@@ -1,5 +1,5 @@
 {
-  "name": "Angular Client Base",
+  "name": "angular-client-base",
   "description": "A base project for angular client app",
   "dependencies": {
     "bower": "^1.7.2"
